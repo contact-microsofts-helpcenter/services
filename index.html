@@ -3,92 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>All In Microsoft-Windows Product Services</title>
+  <title>All In One Microsoft Product Services</title>
   <meta name="description" content="Independent Microsoft & Windows product support — call our toll free number 1-888-649-6065 for assistance with Windows, Office, Microsoft 365, Teams, Outlook, OneDrive, Azure, Surface, Xbox, SharePoint, and more." />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--accent:#0078d4;--bg:#f4f9ff;--card:#ffffff;--muted:#6b7280}
+    :root{--accent:#0078d4;--bg:#f3f6fb;--card:#ffffff;--muted:#6b7280;--section-bg:#e6f0fa}
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0;font-family:Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased}
-    .container{max-width:980px;margin:48px auto;padding:24px}
-    .card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 6px 30px rgba(13,42,77,0.08)}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
-    .logo{display:flex;gap:12px;align-items:center}
-    .logo .mark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;overflow:hidden}
-    .logo img{width:44px;height:44px;object-fit:cover;display:block}
-    h1{margin:8px 0 12px;font-size:28px;line-height:1.1}
-    p.lead{margin:0 0 18px;color:var(--muted)}
+    body{margin:0;font-family:'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased}
+    a{text-decoration:none}
 
-    .hero{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;padding-top:12px}
-    .hero-left{flex:1;min-width:260px}
-    .phone{display:inline-flex;align-items:center;gap:12px;padding:14px 18px;border-radius:12px;background:linear-gradient(90deg,rgba(0,120,212,0.12),rgba(0,120,212,0.06));border:1px solid rgba(0,120,212,0.08);margin-bottom:18px}
-    .phone .num{font-weight:700;font-size:18px}
-    .cta{margin-top:12px;display:flex;gap:12px;align-items:center}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer;text-decoration:none}
-    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(0,120,212,0.16)}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:22px}
-    .feature{background:rgba(0,120,212,0.03);padding:12px;border-radius:10px}
-    .feature h4{margin:0 0 6px;font-size:14px}
-    .feature p{margin:0;font-size:13px;color:var(--muted)}
+    .container{max-width:1024px;margin:48px auto;padding:24px}
+    .card{background:var(--card);border-radius:16px;padding:32px;box-shadow:0 8px 30px rgba(0,0,0,0.08)}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{display:flex;gap:16px;align-items:center}
+    .logo .mark{width:50px;height:50px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .logo img{width:50px;height:50px;object-fit:cover}
+    .logo-text{display:flex;flex-direction:column}
+    .logo-text .title{font-weight:700;font-size:20px}
+    .logo-text .subtitle{font-size:12px;color:var(--muted)}
 
-    .hero-right{width:320px;min-width:240px}
-    .support-box{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(0,120,212,0.06)}
-    footer{margin-top:28px;font-size:13px;color:var(--muted);text-align:center}
+    h1{margin:0 0 16px;font-size:32px;line-height:1.2;font-weight:700}
+    p.lead{margin:0 0 24px;font-size:16px;color:var(--muted)}
 
-    @media (max-width:560px){.hero{flex-direction:column}.hero-right{width:100%}}
+    .hero{display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap}
+    .hero-left{flex:1;min-width:300px}
+    .phone{display:inline-flex;align-items:center;gap:12px;padding:16px 20px;border-radius:14px;background:linear-gradient(90deg,rgba(0,120,212,0.12),rgba(0,120,212,0.06));border:1px solid rgba(0,120,212,0.08);margin-bottom:24px;font-weight:600;font-size:18px}
+    .cta{margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:12px;border:0;font-weight:600;cursor:pointer;color:#fff;background:var(--accent);box-shadow:0 6px 20px rgba(0,120,212,0.2);transition:all 0.2s ease-in-out}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,120,212,0.25)}
+
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px}
+    .feature{background:var(--section-bg);padding:16px;border-radius:12px;transition:all 0.2s ease-in-out}
+    .feature:hover{background:rgba(0,120,212,0.12)}
+    .feature h4{margin:0 0 8px;font-size:16px;font-weight:600}
+    .feature p{margin:0;font-size:14px;color:var(--muted)}
+
+    .disclaimer{margin-top:24px;font-size:13px;color:var(--muted)}
+    footer{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+    .footer-banner{margin-top:12px;display:flex;justify-content:center;align-items:center}
+    .footer-banner img{max-width:150px;height:auto}
+
+    @media(max-width:600px){.hero{flex-direction:column}.hero-left{width:100%}}
   </style>
 </head>
 <body>
   <main class="container">
-    <div class="card" role="main">
+    <div class="card">
       <header>
-        <div class="logo" aria-hidden>
+        <div class="logo">
           <div class="mark">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6smg3FpheR3jUeFez5EZ5dqSImfpv9fJMEcI1ZUpXQ_TCQV5tKcN0b_OdQAgrbyafD4&usqp=CAU" alt="Logo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6smg3FpheR3jUeFez5EZ5dqSImfpv9fJMEcI1ZUpXQ_TCQV5tKcN0b_OdQAgrbyafD4&usqp=CAU" alt="Logo">
           </div>
-          <div>
-            <div style="font-weight:700">Microsoft & Windows Product Support</div>
-            <div style="font-size:12px;color:var(--muted)">24/7 Live Support Agent Avaialble. Contact Now</div>
+          <div class="logo-text">
+            <div class="title">Microsoft & Windows Product Support</div>
+            <div class="subtitle">Independent Service Provider</div>
           </div>
         </div>
         <div style="font-size:14px;color:var(--muted)">Available 24/7</div>
       </header>
 
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero">
         <div class="hero-left">
-          <h1 id="hero-title">Customer Support for Microsoft & Windows Products</h1>
-          <p class="lead">Call our toll-free number <strong>1-888-649-6065</strong> for assistance with Microsoft Windows, Windows 11, Windows 10, Office 365, Microsoft 365, Word, Excel, PowerPoint, Outlook, Teams, OneDrive, Edge, Azure, SharePoint, Exchange Server, Dynamics 365, Intune, Visual Studio, Surface, Xbox, and more.</p>
+          <h1>Get Help & Support for Microsoft & Windows Products</h1>
+          <p class="lead">Call our toll-free number <strong>1-888-649-6065</strong> for assistance with Windows 10, Windows 11, Office 365, Microsoft 365, Word, Excel, PowerPoint, Outlook, Teams, OneDrive, Edge, Azure, SharePoint, Exchange Server, Dynamics 365, Intune, Visual Studio, Surface devices, Xbox consoles, and more.</p>
 
-          <div class="phone" aria-label="Toll free number">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.99.37 1.95.73 2.85a2 2 0 0 1-.45 2.11L8.91 9.91a16 16 0 0 0 6 6l1.23-1.23a2 2 0 0 1 2.11-.45c.9.36 1.86.61 2.85.73A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="num">
-              <a href="tel:+18886496065" style="color:inherit;text-decoration:none;">1-888-649-6065</a>
-            </div>
-          </div>
-
-          <div class="cta">
-            <a class="btn btn-primary" href="tel:+18886496065" aria-label="Call Microsoft support toll free">Call Now</a>
-          </div>
+          <div class="phone">📞 1-888-649-6065</div>
+          <div class="cta"><a class="btn" href="tel:+18886496065">Call Now</a></div>
 
           <div class="features">
-            <div class="feature"><h4>Windows Support</h4><p>Windows 10, Windows 11 installation, troubleshooting, updates, activation.</p></div>
-            <div class="feature"><h4>Office & Microsoft 365</h4><p>Word, Excel, PowerPoint, Outlook, OneDrive, Teams, Exchange Online, SharePoint.</p></div>
-            <div class="feature"><h4>Business & Enterprise</h4><p>Azure, Dynamics 365, Intune, Visual Studio, Enterprise deployment, security support.</p></div>
-            <div class="feature"><h4>Devices & Hardware</h4><p>Surface laptops, tablets, PCs, peripherals, Xbox console setup and support.</p></div>
-            <div class="feature"><h4>Browsers & Apps</h4><p>Microsoft Edge, Outlook app, Teams app, OneDrive sync, and related apps support.</p></div>
+            <div class="feature"><h4>Windows Support</h4><p>Installation, troubleshooting, updates, and activation for Windows 10 & 11.</p></div>
+            <div class="feature"><h4>Office & Microsoft 365</h4><p>Word, Excel, PowerPoint, Outlook, OneDrive, Teams, SharePoint, Exchange Online.</p></div>
+            <div class="feature"><h4>Business & Enterprise</h4><p>Azure, Dynamics 365, Intune, Visual Studio, Enterprise deployment, and security support.</p></div>
+            <div class="feature"><h4>Devices & Hardware</h4><p>Surface laptops, tablets, PCs, peripherals, and Xbox consoles setup and support.</p></div>
+            <div class="feature"><h4>Browsers & Apps</h4><p>Microsoft Edge, Teams app, Outlook app, OneDrive sync, and other Microsoft apps.</p></div>
           </div>
 
-          <p style="margin-top:18px;font-size:13px;color:var(--muted);">Note: This is an independent service provider offering support for Microsoft and Windows products.</p>
+          <p class="disclaimer">Note: This is an independent service provider offering support for Microsoft and Windows products.</p>
         </div>
       </section>
 
       <footer>
-        <small>© <span id="year"></span> Independent Microsoft & Windows Product Support — Toll free: <a href="tel:+18886496065">1-888-649-6065</a></small>
+        <small>© <span id="year"></span> Contact Microsoft & Windows Product Support — Toll free: <a href="tel:+18886496065">1-888-649-6065</a></small>
+        <div class="footer-banner">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Microsoft_Certified_Professional.png" alt="Microsoft Certified Professional">
+        </div>
       </footer>
     </div>
   </main>
 
   <script>
-    document.getElementById('year').textContent = new
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
